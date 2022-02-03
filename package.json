@@ -1,0 +1,26 @@
+{
+    "name": "cowscript-lang-support",
+    "displayName": "Cowscript Language Support",
+    "description": "Adds support for Cowscript to VS Code",
+    "version": "0.0.1",
+    "publisher": "cfp",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cowscript-lang-support",
+            "aliases": ["Cowscript", "cowscript-lang-support"],
+            "extensions": [".cow"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cowscript-lang-support",
+            "scopeName": "source.cow",
+            "path": "./syntaxes/cowscript-lang-support.tmLanguage.json"
+        }]
+    }
+}
